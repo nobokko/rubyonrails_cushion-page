@@ -1,5 +1,5 @@
 # rails generate controller cushions index show
-require "cgi"
+require 'cgi'
 
 class CushionsController < ApplicationController
   def index
@@ -7,7 +7,7 @@ class CushionsController < ApplicationController
     sample_url = 'https://duckduckgo.com/?q=<br>&ia=web#hash'
 
     @plain_url = sample_url
-    @urlescaped_url = CGI.escape(sample_url)
+    # @urlescaped_url = CGI.escape(sample_url)
     # @htmlescaped_url = CGI.escapeHTML(sample_url)
   end
 
