@@ -3,7 +3,8 @@ require "cgi"
 
 class CushionsController < ApplicationController
   def index
-    sample_url = 'https://duckduckgo.com/?params=<br>#hash'
+    # 「<br>」は検索条件、「#hash」はハッシュです。
+    sample_url = 'https://duckduckgo.com/?q=<br>&ia=web#hash'
 
     @plain_url = sample_url
     @urlescaped_url = CGI.escape(sample_url)
